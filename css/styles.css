@@ -24,22 +24,23 @@ a:visited {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #414141;
+  box-shadow: inset 0 0 5px #ffffff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffcd33;
+  background: #494aac;
 }
 
 /* Handle on hover */
 
 header {
+  background: linear-gradient(40deg, #272655, #414196);
   width: 100%;
   padding: 2rem 0px;
   top: 0;
@@ -167,6 +168,12 @@ header .logo img {
     z-index: 999;
   }
 
+  header .logo img {
+    width: 60%;
+    padding: 0;
+    margin: 0;
+  }
+
   .menu {
     position: fixed;
     top: 0;
@@ -198,21 +205,24 @@ header .logo img {
 }
 
 main {
+  background: linear-gradient(100deg, #272655, #414196);
   color: #fff;
   padding-top: 5rem;
 }
 
 main .texto {
-  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 main h1 {
   font-size: 3rem;
   text-align: left;
+  width: 80%;
 }
 
 main p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  width: 80%;
   font-weight: 300;
   padding-top: 1rem;
 }
@@ -239,10 +249,617 @@ main .imagem {
 }
 
 main .imagem img {
-  width: 70%;
+  width: 90%;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  main {
+    padding-top: 1rem;
+  }
+
+  main .texto {
+    width: 100%;
+    padding-top: 7rem;
+  }
+
+  main h1 {
+    width: 100%;
+  }
+
+  main .imagem img {
+    padding-top: 9rem;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  main {
+    padding-top: 2rem;
+  }
+
+  main .texto {
+    padding-top: 2rem;
+  }
+
+  main .imagem {
+    padding-top: 6rem;
+  }
+
+  main .imagem img {
+    width: 100%;
+  }
+
+  main h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  main h1 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  main p {
+    text-align: center;
+    width: 100%;
+  }
+
+  main .botao {
+    text-align: center;
+  }
+
+  main button {
+    width: 90%;
+  }
 }
 
 #apresentacao {
-  background: linear-gradient(5.25deg, #272655 3.26%, #414196 91.95%);
   color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#apresentacao .titulo {
+  display: flex;
+  text-align: left;
+  justify-content: start;
+  align-items: center;
+}
+
+#apresentacao .titulo h1 {
+  padding-top: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+#apresentacao .titulo img {
+  width: 2.5%;
+}
+
+#apresentacao .texto p {
+  width: 70%;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+#apresentacao .cards {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#apresentacao .newCard {
+  background: #fff;
+  color: #2b2b2b;
+  width: 90%;
+  padding: 2rem;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+#apresentacao .newCard .titulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#apresentacao .newCard .titulo img {
+  width: 10%;
+}
+
+#apresentacao .newCard p {
+  font-size: 1.1rem;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  #apresentacao {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  #apresentacao .texto p {
+    width: 100%;
+  }
+
+  #apresentacao .titulo {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #apresentacao .titulo img {
+    width: 8%;
+  }
+
+  #apresentacao .cards {
+    text-align: center;
+  }
+
+  #apresentacao .newCard {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #apresentacao .marginXs {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #apresentacao .marginXs2 {
+    margin-top: 2rem;
+  }
+}
+
+#pagamentos {
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #fff;
+}
+
+#pagamentos .titulo {
+  display: flex;
+  align-items: center;
+}
+
+#pagamentos .titulo img {
+  width: 7%;
+}
+
+#pagamentos .titulo h1 {
+  padding-top: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+#pagamentos p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-top: 1rem;
+  width: 80%;
+}
+
+#pagamentos .tabela {
+  background: #fff;
+  color: #030303;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+#pagamentos .conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+
+#pagamentos h5 {
+  font-size: 1rem;
+  width: 30%;
+  color: #1d1b3f;
+  font-weight: 400;
+  text-align: left;
+}
+
+#pagamentos .tabela p {
+  width: 100%;
+}
+
+#pagamentos .conteudo p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+#pagamentos .tabela {
+  margin-top: 3rem;
+  position: relative;
+  z-index: 100;
+}
+
+#pagamentos .imagem {
+  position: absolute;
+  left: 50%;
+  z-index: 99;
+}
+
+#pagamentos .imagem img {
+  width: 70%;
+}
+
+@media screen and (max-width: 990px) {
+  #pagamentos .titulo {
+    text-align: center;
+    justify-content: center;
+  }
+
+  #pagamentos p {
+    text-align: center;
+    width: 100%;
+  }
+
+  #pagamentos .conteudo {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #pagamentos .conteudo h5 {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  #pagamentos .imagem {
+    display: none;
+  }
+
+  #pagamentos .tabela img {
+    display: none;
+  }
+}
+
+#ferramentas {
+  background: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #1d1c3f;
+}
+
+#ferramentas .titulo {
+  display: flex;
+  align-items: center;
+}
+
+#ferramentas h1 {
+  font-weight: 500;
+  padding-top: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+#ferramentas p {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+
+#ferramentas img {
+  width: 5%;
+}
+
+#ferramentas .tabela {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#ferramentas .conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+#ferramentas h5 {
+  font-size: 1rem;
+  width: 30%;
+  font-weight: 500;
+}
+
+#ferramentas .conteudo p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#ferramentas .conteudo img {
+  width: 3%;
+}
+
+#ferramentas .imagem img {
+  width: 50%;
+}
+
+@media screen and (max-width: 990px) {
+  #ferramentas .imagem {
+    text-align: center;
+  }
+
+  #ferramentas .titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #ferramentas h1 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+  }
+
+  #ferramentas .titulo img {
+    width: 8%;
+  }
+
+  #ferramentas p {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #ferramentas .conteudo img {
+    display: none;
+  }
+}
+
+#automatizar {
+  background: #fff;
+}
+
+#automatizar .titulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#automatizar .titulo img {
+  width: 3%;
+}
+
+#automatizar .cards {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#automatizar .cards img {
+  width: 90%;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+#automatizar .cards img:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 990px) {
+  #automatizar .titulo img {
+    width: 6%;
+  }
+
+  #automaticar .cards {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #automatizar .cards img {
+    width: 90%;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+}
+
+#criar {
+  background: linear-gradient(94.13deg, #f27c2c -12.34%, #ea3f3b 75.85%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#criar p {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+#criar .botao {
+  text-align: center;
+}
+
+#criar .botao button {
+  background: #fff;
+  border: 0;
+  width: 50%;
+  padding: 0.8rem;
+  color: #eb403c;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in;
+}
+
+#criar .botao button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 990px) {
+  #criar p {
+    text-align: center;
+  }
+
+  #criar .botao {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #criar .botao button {
+    width: 90%;
+  }
+}
+
+#conta {
+  background: linear-gradient(138.77deg, #334cc1 -11%, #2e327f 69.52%);
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#conta .newCard {
+  width: 80%;
+}
+
+#conta .newCard img {
+  width: 15%;
+}
+
+#conta .newCard h2 {
+  padding-top: 0.5rem;
+  font-weight: 600;
+}
+
+#conta .newCard p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-top: 1rem;
+}
+
+#conta .cardConta {
+  background: #fff;
+  color: #222047;
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+#conta .titulo {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#conta .titulo img {
+  width: 4%;
+}
+
+#conta p {
+  font-size: 1.2rem;
+  width: 80%;
+  font-weight: 300;
+}
+
+#conta .formulario {
+  display: flex;
+}
+
+#conta .formulario form {
+  width: 100%;
+}
+
+#conta .formulario input {
+  width: 100%;
+  padding: 0.8rem;
+  padding-right: 10rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#conta .formulario button {
+  background: #26d46c;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.3s ease-in;
+}
+
+#conta .formulario button:hover {
+  background: #25ac5b;
+}
+
+@media screen and (max-width: 990px) {
+  #conta .newCard {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  #conta p {
+    width: 100%;
+  }
+
+  #conta .cardConta {
+    text-align: center;
+  }
+
+  #conta .cardConta img {
+    width: 8%;
+  }
+
+  #conta .formulario form {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #conta .formulario input {
+    width: 100%;
+    padding: 0.8rem 3rem;
+    padding-left: 1rem;
+  }
+}
+
+footer {
+  background: #334cc1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+footer .logo {
+  text-align: left;
+}
+
+footer .logo img {
+  width: 50%;
+}
+
+footer .copyright {
+  text-align: right;
+  padding-top: 1rem;
+}
+
+footer .copyright p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 990px) {
+  footer .logo {
+    text-align: center;
+  }
+
+  footer .copyright {
+    text-align: center;
+  }
 }
