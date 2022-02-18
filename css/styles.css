@@ -39,6 +39,14 @@ a:visited {
 
 /* Handle on hover */
 
+.mlCard1 {
+  margin-left: 1rem;
+}
+
+.mlCard2 {
+  margin-left: 2rem;
+}
+
 header {
   background: linear-gradient(40deg, #272655, #414196);
   width: 100%;
@@ -163,6 +171,11 @@ header .logo img {
 }
 
 @media screen and (max-width: 990px) {
+  .mlCard1,
+  .mlCard2 {
+    margin: 0;
+  }
+
   .hamburguer {
     display: block;
     z-index: 999;
