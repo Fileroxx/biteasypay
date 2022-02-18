@@ -660,8 +660,8 @@ main .imagem img {
     width: 6%;
   }
 
-  #automaticar .cards {
-    text-align: center;
+  #automatizar .cards {
+    text-align: center !important;
     width: 100%;
     margin: 0 auto;
   }
