@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    display: flex;
+    color: #fff;
+    
+}
+
+.esquerdo {
+    background: linear-gradient(152.2deg, #494AAC -18.02%, rgba(33, 31, 70, 0.96) 134.94%);
+    width: 50%;
+    height: 100%;
+    padding-top: 20rem;
+    height: 100vh;
+}
+
+.direito {
+    background: linear-gradient(160.81deg, #222222 -9.2%, #222047 -9.19%, #222222 87.09%);
+    width: 50%;
+    padding-top: 20rem;
+    height: 100vh;
+}
+
+.direito .logo {
+    display: none;
+}
+
+.esquerdo .logo {
+    padding-left: 5rem;
+}
+
+.esquerdo .logo img {
+    width: 40%;
+}
+
+.esquerdo h1 {
+    width: 60%;
+    padding-left: 5rem;
+    font-weight: 400;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.formulario {
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    outline: 0;
+    border-radius: 10px;
+    border: 0;
+}
+
+button {
+    background: #26D46C;
+    width: 50%;
+    color: #fff;
+    border: 0;
+    padding: .5rem;
+    outline: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+    transition: all .3s ease-in;
+}
+
+button:hover {
+    background: #1e994f;
+}
+
+
+a {
+    color: #fff;
+    transition: all .3s ease-in;
+}
+
+a:hover {
+    color: #494AAC;
+}
+
+@media screen and (max-width: 990px) {
+    .esquerdo {
+        display: none;
+    }
+
+    .direito {
+        width: 100%;
+        padding-top: 15rem;
+    }
+
+    .direito .logo {
+        display: block;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .direito .logo img {
+        width: 50%;
+    }
+
+    input {
+        width: 80%;
+        
+    }
+
+    button {
+        width: 80%;
+    }
+
+
+}
